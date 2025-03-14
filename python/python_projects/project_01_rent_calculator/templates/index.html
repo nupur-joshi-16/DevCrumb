@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="../static/style.css" rel="stylesheet">
+	<title>Rent Calculator</title>
+</head>
+<body>
+	<div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
+		<h1>Rent Calculator</h1>
+	</div>
+	<div class="formbg">
+		<div class="formbg-inner padding-horizontal--48">
+			<span class="padding-bottom--15">Splitting the bill with your roommates</span>
+			<form method="post">
+				<div class="field padding-bottom--24">
+					<label for="rent_amount">Rent Amount</label> <input name="total_rent" type="number">
+				</div>
+				<div class="field padding-bottom--24">
+					<label for="rent_amount">Society Maintenance</label> <input name="society_maintenance" type="number">
+				</div>
+				<div class="field padding-bottom--24">
+					<label for="rent_amount">Water Bill</label> <input name="water_bill" type="number">
+				</div>
+				<div class="field padding-bottom--24">
+					<label for="rent_amount">Electricity Bill</label> <input name="electricity_bill" type="number">
+				</div>
+				<div class="field padding-bottom--24">
+					<label for="rent_amount">Food expenses</label> <input name="total_food" type="number">
+				</div>
+				<div class="field padding-bottom--24">
+					<label for="rent_amount">How many people are splitting the bill?</label> <input name="people" type="number">
+				</div>
+				<div class="field padding-bottom--24">
+					<input name="submit" type="submit" value="Calculate">
+				</div>
+				<div class="field">
+					{% if result is not none %}
+					<h5>Everyone needs to pay ₹{{ result }} individually.</h5>{% endif %} {% if error %}
+					<h5>{{ error }}</h5>{% endif %}
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
