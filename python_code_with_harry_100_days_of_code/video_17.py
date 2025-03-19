@@ -25,3 +25,6 @@ for n in range(1, 11):
     print(n)
 
 # Need to explore step argument.
+
+for n in range(1, 100, 4):
+    print(n)
