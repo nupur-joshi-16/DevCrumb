@@ -1,24 +1,22 @@
-# Data Types
+# control flow with if / else and conditional operators
 
-# string, integer, float, boolean
+# if else statement
 
-# subscripting
-print("Hello"[0])
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
 
-# String
-print("123" + "456") #Concatenation
+if height >= 120:
+    print("You can ride the rollercoaster")
+else:
+    print("Sorry you have to grow taller before you can ride.")
 
-# Integer = whole number
-print( 1 + 2)
+# # comparison operator
+# > greater than
+# < less than
+# >= greater than or equal to
+# <= less than or equal to
+# == equal to
+# != not equal to
 
-# Large Integers
-print(123_456_789)
-
-# Float = floating point number
-print(10.20)
-
-# Boolean
-print(True)
-print(False)
 
 

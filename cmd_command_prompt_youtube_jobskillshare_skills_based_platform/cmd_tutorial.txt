@@ -1,0 +1,46 @@
+CMD (Command Prompt) – Notes  
+Source: CMD - Command Prompt Training for IT Professionals (Full Course)  
+Link: https://www.youtube.com/watch?v=qnXe1gecux8
+
+---
+
+What is CMD?  
+- CMD stands for Command Prompt.  
+- Before Windows, the most common operating system on IBM PC compatibles was DOS (Disk Operating System).  
+- DOS was a text-based (non-graphical) operating system.  
+- To run programs or manage the system, users had to manually type commands.
+
+---
+
+Basic Command  
+- `cls` – Clears the screen.
+
+---
+
+CMD vs PowerShell  
+- Will explore this later.  
+- CMD is simpler; PowerShell is more powerful and scriptable.
+
+---
+
+Basic File and Folder Operations
+
+To open CMD:  
+- Type `cmd` in Start menu.  
+- Right-click and choose “Run as Administrator” (for admin access).  
+- Or just press Enter to open normally.
+
+Directory navigation:  
+- `cd..` – Go up one level.  
+- `cd directoryname` – Go into a subdirectory.  
+- `cd\` – Go to the root directory.  
+- `dir` – Lists files and folders in the current directory.
+
+Folder operations:  
+- `mkdir foldername` – Create a new folder.  
+- `ren oldfoldername newfoldername` – Rename a folder.
+
+
+
+---
+
